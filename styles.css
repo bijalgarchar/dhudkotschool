@@ -1596,86 +1596,64 @@ h2 {
 .link-button:hover {
     background-color: #3f5efb;
 }
-/* General styles for mobile responsiveness */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+.school-name {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333; /* Smart dark text */
+    padding: 20px;
+    text-align: center;
+    background: none; /* Remove solid or gradient background */
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); /* Subtle pattern */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
+.hero-image h3 {
+    font-size: 1.5em;
+    color: #666;
+    background-color: transparent; /* No solid background */
+    padding: 10px;
+    text-align: center;
+}
+
+.link-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #3f5efb; /* Smart blue background */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #fc466b;
+}
 .home-section {
+    padding: 20px;
+    background: none; /* Remove the solid background */
+    background-image: linear-gradient(to bottom, #f0f4f8, #ffffff); /* Soft gradient from light gray to white */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+}
+
+/* Ensure the rest of the section content adapts to the new background */
+.school-info, .mission-vision-section, .head-teacher-profile, .teacher-profiles {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for content blocks */
     padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for content blocks */
 }
 
-/* Adjust the font sizes and padding for smaller screens */
-@media (max-width: 768px) {
-    .school-name {
-        font-size: 2em;
-        padding: 15px;
-    }
-
-    .hero-image h3 {
-        font-size: 1.2em;
-        padding: 8px;
-    }
-
-    .link-button {
-        padding: 10px 20px;
-        font-size: 1em;
-        margin: 5px;
-        width: 100%; /* Make buttons take full width */
-        text-align: center;
-    }
-
-    .school-info, .mission-vision-section, .head-teacher-profile, .teacher-profiles {
-        text-align: center; /* Center align text for better readability on smaller screens */
-    }
-
-    .teacher-photo, .head-teacher-photo {
-        width: 100%; /* Make teacher images responsive */
-        max-width: 200px; /* Limit max size for images */
-    }
-
-    .profiles-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-card {
-        margin-bottom: 20px;
-    }
-
-    /* Noticeboard and Diary Dates responsive */
-    .noticeboard-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .diary-item {
-        font-size: 1em;
-    }
-
-    footer {
-        font-size: 0.8em;
-        padding: 10px;
-    }
-}
-
-/* Adjust styles for very small screens */
-@media (max-width: 480px) {
-    .school-name {
-        font-size: 1.8em;
-    }
-
-    .hero-image h3 {
-        font-size: 1em;
-    }
-
-    .link-button {
-        padding: 8px 15px;
-        font-size: 0.9em;
-    }
+.noticeboard-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Same transparent background for noticeboard */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for consistency */
 }
 .hero-image {
     padding: 40px 20px;
@@ -1751,4 +1729,177 @@ body {
 .teacher-profiles h2 {
     font-size: 2em;
     margin-bottom: 20px;
+}
+/* General mobile styles */
+@media only screen and (max-width: 768px) {
+    .home-section {
+        padding: 20px;
+    }
+
+    .hero-image {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .school-name {
+        font-size: 1.8em; /* Make the school name smaller */
+        margin-bottom: 10px;
+    }
+
+    .quick-links {
+        margin: 20px 0;
+    }
+
+    .links-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .link-button {
+        padding: 10px 20px;
+        font-size: 0.9em; /* Adjust button font size */
+    }
+
+    .school-info h2 {
+        font-size: 1.5em;
+    }
+
+    .mission-vision-section {
+        display: block; /* Stack mission and vision vertically */
+    }
+
+    .mission-box, .vision-box {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+
+    .head-teacher-profile {
+        margin: 20px 0;
+    }
+
+    .head-teacher-card img {
+        width: 150px; /* Smaller image */
+        height: auto;
+    }
+
+    .teacher-profiles .teacher-card-container {
+        display: block; /* Stack teacher profiles */
+    }
+
+    .teacher-card {
+        margin-bottom: 15px;
+    }
+
+    .teacher-photo-small {
+        width: 100px; /* Make teacher photos smaller */
+        height: auto;
+    }
+
+    .noticeboard, .diary-dates {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 0.8em;
+    }
+}
+/* Slightly Larger Home Section */
+.home-section {
+    padding: 30px; /* Slightly increase padding */
+    max-width: 100%; /* Ensure full width */
+}
+
+.hero-image {
+    height: 400px; /* Increase height of the hero section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.school-name {
+    font-size: 2.5em; /* Slightly larger school name */
+    margin-bottom: 12px; /* Add more space below */
+}
+
+.hero-image h3 {
+    font-size: 1.4em; /* Larger UDISE number */
+    margin-bottom: 10px;
+}
+
+.quick-links h2 {
+    font-size: 1.5em; /* Slightly larger welcome message */
+    margin-bottom: 12px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 14px; /* Space between buttons */
+    margin-top: 12px;
+}
+
+.link-button {
+    padding: 10px 20px; /* Slightly larger button size */
+    font-size: 1em;
+}
+
+/* Mission and Vision Section */
+.mission-vision-section {
+    padding: 25px; /* Add a bit more padding */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.mission-box, .vision-box {
+    width: 45%; /* Keep the same width */
+    font-size: 1em; /* Slightly larger text */
+}
+
+.head-teacher-profile, .teacher-profiles {
+    padding: 25px; /* Increase padding */
+}
+
+/* Responsive adjustments for mobile */
+@media only screen and (max-width: 768px) {
+    .hero-image {
+        height: 250px; /* Increase height for mobile */
+    }
+
+    .school-name {
+        font-size: 2em; /* Slightly larger for mobile */
+    }
+
+    .hero-image h3 {
+        font-size: 1.2em;
+    }
+
+    .quick-links h2 {
+        font-size: 1.3em;
+    }
+
+    .links-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Slightly more space between buttons */
+    }
+
+    .link-button {
+        padding: 8px 16px; /* Increase button size for mobile */
+        font-size: 0.9em;
+    }
+
+    .mission-box, .vision-box {
+        width: 100%; /* Full width on mobile */
+        font-size: 0.95em; /* Slightly larger text */
+    }
 }
