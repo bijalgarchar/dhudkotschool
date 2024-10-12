@@ -2388,3 +2388,18 @@ h2 {
         font-size: 12px; /* Adjust head teacher description size on mobile */
     }
 }
+/* Head Teacher Profile */
+.head-teacher-profile .head-teacher-card img {
+    width: 120px; /* Increased size for head teacher image */
+    height: 120px; /* Ensure a square shape for perfect circle */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Individual Teacher Card */
+.teacher-card img {
+    width: 100px; /* Increased size for teacher images */
+    height: 100px; /* Ensure a square shape for perfect circle */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px; /* Space below the image */
+}
