@@ -1677,3 +1677,29 @@ body {
         font-size: 0.9em;
     }
 }
+.hero-image {
+    padding: 40px 20px;
+    background: none; /* Remove the background image */
+    background-image: linear-gradient(to right, #e0f7fa, #ffffff); /* Soft gradient background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for some depth */
+    text-align: center;
+}
+
+/* Heading and subheading styling for readability */
+.school-name {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Slight transparency for contrast */
+    border-radius: 10px;
+}
+
+.hero-image h3 {
+    font-size: 1.5em;
+    color: #666;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5); /* Soft transparent background */
+    border-radius: 5px;
+}
