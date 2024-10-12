@@ -1903,3 +1903,316 @@ h2 {
         font-size: 0.95em; /* Slightly larger text */
     }
 }
+/* Add this to your styles2.css */
+
+/* General styles for the teacher-card container */
+.teacher-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.teacher-card {
+    width: 22%; /* Adjust the size as needed */
+    text-align: center;
+    margin: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .teacher-card {
+        width: 45%; /* Adjust this for a better fit on tablets and smaller screens */
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .teacher-card {
+        width: 90%; /* Full width on small mobile devices */
+        margin: 10px auto;
+    }
+
+    .teacher-photo-small {
+        width: 80px; /* Adjust the image size for smaller screens */
+        height: auto;
+    }
+
+    .teacher-card h3, .teacher-card p {
+        font-size: 14px; /* Adjust the font size for better readability on small screens */
+    }
+}
+/* General styles for the home section */
+.home-section {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .school-name {
+        font-size: 28px; /* Reduce font size */
+    }
+
+    .quick-links h2 {
+        font-size: 20px; /* Adjust welcome message font size */
+    }
+
+    .links-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-button {
+        padding: 10px 15px; /* Adjust button padding */
+        margin: 10px 0; /* Space between buttons */
+        font-size: 14px; /* Adjust button text size */
+    }
+}
+
+@media (max-width: 480px) {
+    .school-name {
+        font-size: 22px; /* Further reduce for very small screens */
+    }
+
+    .quick-links h2 {
+        font-size: 18px;
+    }
+
+    .link-button {
+        padding: 8px 12px;
+        font-size: 12px; /* Smaller buttons */
+    }
+
+    .hero-image {
+        padding: 20px 10px; /* Reduce padding to fit content within viewport */
+    }
+}
+/* School Info Section */
+.school-info {
+    width: 85%; /* Reduce the width */
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a nice effect */
+}
+
+.school-info h2 {
+    font-size: 22px; /* Slightly reduce the heading size */
+    margin-bottom: 10px;
+}
+
+.school-info p {
+    font-size: 14px; /* Make the paragraph text smaller */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .school-info {
+        width: 90%; /* Make it wider on tablets */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .school-info h2 {
+        font-size: 20px; /* Adjust heading size on smaller screens */
+    }
+
+    .school-info p {
+        font-size: 14px; /* Slightly smaller text */
+    }
+}
+
+@media (max-width: 480px) {
+    .school-info {
+        width: 90%; /* Further reduce width for mobile */
+        padding: 8px; /* Further reduce padding */
+    }
+
+    .school-info h2 {
+        font-size: 20px; /* Smaller heading for mobile */
+    }
+
+    .school-info p {
+        font-size: 10px; /* Adjust text size for mobile */
+    }
+}
+/* School Info Section */
+.school-info {
+    width: 80%; /* Increase width */
+    margin: 10px auto; /* Reduce top and bottom margin */
+    padding: 10px 20px; /* Reduce padding to decrease height */
+    text-align: center;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Keep the shadow effect */
+}
+
+.school-info h2 {
+    font-size: 22px; /* Keep heading size reduced */
+    margin-bottom: 8px; /* Reduce space under heading */
+}
+
+.school-info p {
+    font-size: 14px; /* Keep the text size smaller */
+    line-height: 1.4; /* Reduce line height to further reduce the height */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .school-info {
+        width: 90%; /* Adjust width for tablets */
+        padding: 8px 15px; /* Reduce padding further */
+    }
+
+    .school-info h2 {
+        font-size: 20px; /* Adjust heading size for smaller screens */
+    }
+
+    .school-info p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .school-info {
+        width: 95%; /* Further increase width on mobile */
+        padding: 5px 10px; /* Further reduce padding for mobile */
+    }
+
+    .school-info h2 {
+        font-size: 18px; /* Smaller heading for mobile */
+    }
+
+    .school-info p {
+        font-size: 12px; /* Adjust text size for mobile */
+    }
+}
+/* School Info Section */
+.school-info {
+    width: 80%; /* Increase width */
+    margin: 10px auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Increase Font Size for School Info Heading */
+.school-info h2 {
+    font-size: 30px; /* Larger font size for the heading */
+    margin-bottom: 10px;
+}
+
+/* Increase Font Size for School Info Paragraph */
+.school-info p {
+    font-size: 18px; /* Larger font size for the paragraph */
+    line-height: 1.8; /* Adjust line height for better readability */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .school-info {
+        width: 90%; /* Adjust width for tablets */
+        padding: 8px 15px;
+    }
+
+    .school-info h2 {
+        font-size: 26px; /* Slightly reduce heading size for tablets */
+    }
+
+    .school-info p {
+        font-size: 16px; /* Slightly reduce paragraph size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .school-info {
+        width: 95%; /* Further increase width for mobile */
+        padding: 5px 10px;
+    }
+
+    .school-info h2 {
+        font-size: 24px; /* Adjust heading size for mobile */
+    }
+
+    .school-info p {
+        font-size: 14px; /* Adjust paragraph size for mobile */
+    }
+}
+/* Meet Our Teachers Section */
+.teacher-profiles {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.teacher-card-container {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between the cards */
+    flex-wrap: wrap; /* Allow the cards to wrap on smaller screens */
+    gap: 20px; /* Add space between cards */
+}
+
+/* Individual Teacher Card */
+.teacher-card {
+    width: 48%; /* Set width for two cards per row */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover effect */
+}
+
+.teacher-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Teacher Image */
+.teacher-card img {
+    width: 80px; /* Keep the size consistent */
+    height: 80px; /* Ensure a square shape for perfect circle */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Teacher Name */
+.teacher-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Teacher Description */
+.teacher-card p {
+    font-size: 14px;
+    color: #555555; /* Subtle text color */
+    margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .teacher-card {
+        width: 48%; /* Adjust width for two cards per row */
+        margin-bottom: 20px; /* Add space between rows */
+    }
+}
+
+@media (max-width: 480px) {
+    .teacher-card {
+        width: 90%; /* Full width for mobile */
+        margin-bottom: 20px; /* Space between rows on mobile */
+    }
+}
