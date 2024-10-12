@@ -1703,3 +1703,52 @@ body {
     background: rgba(255, 255, 255, 0.5); /* Soft transparent background */
     border-radius: 5px;
 }
+/* General styling for teacher profiles section */
+.teacher-profiles {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.teacher-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.teacher-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 220px;
+    text-align: center;
+}
+
+.teacher-photo-small {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.teacher-card h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.teacher-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Smaller font and image size for teachers compared to head teacher */
+.teacher-profiles h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
